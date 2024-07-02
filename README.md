@@ -1,1 +1,1 @@
-# CosmeticAI
+https://anastasiaivanko.github.io/CosmeticAI/
