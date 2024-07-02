@@ -93,8 +93,11 @@ nav a:hover {
 
 .hero {
     text-align: center;
-    padding: 100px 20px 85px 20px;
+    padding: 70px 20px 0px 20px;
     background: url('./woman\ \(1\).png') no-repeat center center/cover;
+
+    height: 100vh; /* Встановлюємо висоту секції на всю висоту екрану */
+    
 }
 
 .hero .content {
@@ -132,7 +135,7 @@ nav a:hover {
     color: black;
     font-weight: 500;
     margin-top: 10%;
- 
+    margin-bottom: 10%;
 }
 
 .hero .discover:hover {
