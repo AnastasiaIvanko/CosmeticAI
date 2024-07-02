@@ -177,7 +177,7 @@ nav a:hover {
         display: none;
         flex-direction: column;
         gap: 40px;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgb(137 99 123);
         position: absolute;
         top: 60px;
         right: 20px;
