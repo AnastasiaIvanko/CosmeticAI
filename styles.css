@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #df5b87, #815f97);
+    color: white;
+}
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 2em;
+    color: white;
+    font-weight: 300;
+}
+
+nav .logo span {
+    color: #00a8ff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300; /* Тонкий шрифт */
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav .active a {
+    color: black;
+    background: white;
+}
+
+nav li:nth-child(n+2):nth-child(-n+4) a {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+nav li.spacer {
+    flex-grow: 1;
+}
+
+nav li:nth-last-child(2) a {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+nav .signup {
+    background: #3da9fb;
+    color: white;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('./woman\ \(1\).png') no-repeat center center/cover;
+}
+
+.hero .content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 5em; /* Збільшено розмір */
+    color: white;
+    font-weight: 300;
+}
+
+.hero h1 span {
+    color: #00a8ff;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero button {
+    font-size: 1.2em; /* Збільшення розміру шрифту */
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero .discover {
+    background: white;
+    color: black;
+    font-weight: 500;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.hero .discover:hover {
+    background: #f0f0f0;
+}
+
+.hero .connect {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: 500;
+}
+
+.hero .connect:hover {
+    background: white;
+    color: black;
+}
+
+
+
+@media (max-width: 768px) {
+   
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 250px;
+        padding: 40px;
+        border-radius: 10px;
+        z-index: 100;
+        font-size: x-large;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav .hamburger {
+        display: flex;
+    }
+
+    .hero h1 {
+        
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+   
+}
+
+
+
+
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: 40px; /* Відступ зверху */
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+   
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+}
+
+.column img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h2 {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+.text-content p {
+    font-size: 0.9em;
+}
+
+.round-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+
+.round-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .column img {
+        margin-bottom: 10px;
+    }
+
+    .round-button {
+        top: 10px;
+        right: 10px;
+    }
+}

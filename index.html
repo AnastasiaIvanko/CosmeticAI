@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic AI Innovations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cosmetic <span>AI</span></div> 
+            <ul class="nav-links">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Function</a></li>
+                <li class="spacer"></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#" class="signup">Sign Up</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="content">
+                <h1>AI  <span>Innovations</span></h1>
+                <p>We’re constantly pushing the boundaries of what’s possible, exploring new frontiers, and redefining industry standards.</p>
+                <button class="discover">Discover</button>
+                <button class="connect">Connect With Us</button>
+            </div>
+        
+            <!-- Новий блок з 3 стовпців -->
+            <div class="columns">
+                <div class="column">
+                    <img src="./1.webp" alt="Innovative Solutions">
+                    <div class="text-content">
+                        <h2>Global Impact</h2>
+                        <p>No two businesses are alike. 
+                            That’s why we closely work with each client to understand their unique needs and deliver tailored solutions.</p>
+                    </div>
+                    <button class="round-button">→</button>
+                </div>
+                <div class="column">
+                    <img src="./2.webp" alt="Cutting-Edge Technology">
+                    <div class="text-content">
+                        <h2>Tailored Solutions</h2>
+                        <p>From startups to Fortune 500 companies, our tailored AI solutions drive measurable results 
+                            on a global scale.</p>
+                    </div>
+                    <button class="round-button">→</button>
+                </div>
+                <div class="column">
+                    <img src="./3.webp" alt="Expert Support">
+                    <div class="text-content">
+                        <h2>Advanced AI Solutions</h2>
+                        <p>Our proprietary AI algorithms are engineered to deliver unparalleled accuracy, efficiency, and performance.</p>
+                    </div>
+                    <button class="round-button">→</button>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+    </main>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
